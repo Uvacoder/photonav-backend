@@ -26,7 +26,9 @@ To work together with [photonav-frontend](https://github.com/pauloklaus/photonav
 
 2. Send a request with the data:
 
-`curl --request GET http://localhost:8080/folder/`
-`curl --request GET http://localhost:8080/photo/some_file.jpg`
+```shell
+curl --request GET http://localhost:8080/folder/
+curl --request GET http://localhost:8080/photo/some_file.jpg
+```
 
 If you found an error, have any questions or can improve something, please call me.
