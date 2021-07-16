@@ -49,15 +49,11 @@ function makeQueryParams(string $queryString = ""): Array {
     return $params;
 }
 
-function failMessage(int $code = 0): string {
-    return "#" . $code . ": " . LANG["FAIL_MESSAGE"];
-}
-
 // function getParsedBody(): Array {
 //     $body = file_get_contents("php://input");
 
 //     if ($body === false)
-//         throw new Exception(LANG["ERROR_CATCHING_BODY"], 1);
+//         throw new Exception(LANG["ERROR_CATCHING_BODY"]);
 
 //     return json_decode($body, true) ?? [];
 // }
@@ -199,7 +195,6 @@ try {
             $handler = $routeInfo[1];
             $vars = $routeInfo[2];
             $vars["query"] = $queryParams;
-
             $handler($vars);
             break;
         case FastRoute\Dispatcher::NOT_FOUND:

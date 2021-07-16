@@ -3,7 +3,7 @@
     "description": "Api to browse, list and display photos in a folder structure.",
     "keywords": ["api", "photo", "browse", "show", "list"],
     "license": "GPLv3",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "authors": [
         {
             "name": "Paulo S Klaus",
