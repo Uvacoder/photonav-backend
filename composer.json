@@ -1,0 +1,18 @@
+{
+    "name": "pauloklaus/photonav-backend",
+    "description": "Api to browse, list and display photos in a folder structure.",
+    "keywords": ["api", "photo", "browse", "show", "list"],
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Paulo S Klaus",
+            "email": "contato@pauloklaus.com.br",
+            "homepage": "https://pauloklaus.com.br",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "nikic/fast-route": "^1.3",
+        "monolog/monolog": "^2.1"
+    }
+}
