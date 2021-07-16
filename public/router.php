@@ -131,7 +131,7 @@ $logger->pushHandler(new Monolog\Handler\StreamHandler(LOG_FILE, Monolog\Logger:
 
 // Actions
 
-function listFolderContent($param) {
+function listFolderContent(Array $param): void {
     $fullFolderPath = ENV["BASE_FOLDER"] . "/" . ($param["folder"] ?? "");
 
     if (substr($fullFolderPath, -strlen($fullFolderPath)) != "/")
@@ -161,7 +161,7 @@ function listFolderContent($param) {
     ]);
 }
 
-function getPhoto($param) {
+function getPhoto(Array $param): void {
     $fullPhotoPath = ENV["BASE_FOLDER"] . "/" . ($param["photo"] ?? "");
 
     if (!is_file($fullPhotoPath))
