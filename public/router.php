@@ -179,7 +179,7 @@ try {
     $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
         $r->addGroup(ENV["BASE_ROUTE"], function(FastRoute\RouteCollector $r) {
 	        $r->addRoute("OPTIONS", "folder[/[{folder}]]", "success");
-    	    $r->addRoute("GET", "folder[/[{folder:[0-9]{4}-[0-9]{2}[- _a-zA-Z0-9\/\.]*}]]", "listFolderContent");
+    	    $r->addRoute("GET", "folder[/[{folder:[- _a-zA-Z0-9\/\.]*}]]", "listFolderContent");
 
             $r->addRoute("OPTIONS", "photo/{photo}", "success");
     	    $r->addRoute("GET", "photo/{photo:[- _a-zA-Z0-9\/\.]*}", "getPhoto");
