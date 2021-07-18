@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteBase /
+#RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [QSA,L]
+RewriteRule ^ route.php [QSA,L]
